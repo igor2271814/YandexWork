@@ -1,0 +1,96 @@
+@media (max-width: 376px) {
+    .wrapper {
+        width: 375px;
+
+        & .wrapper-1 {
+            width: 375px;
+            height: 774px;
+            & .back_img {
+                width: 375px;
+                height: 812px;
+                background: url(/img/Group_8.png) no-repeat center bottom;
+
+                & .sp_arr {
+                    margin: 18px 15px 0px 15px;
+                    display: grid;
+                    position: absolute;
+                    gap: 40px;
+
+                    & .content {
+                        width: 335px;
+                        height: 393px;
+
+                        & h1 {
+                            font-family: Merriweather;
+                            font-size: 36px;
+                            line-height: 39.6px;
+                            height: 80px;
+                            width: 335px;
+                        }
+                        & h1.centred {
+                            margin-top: -5px;
+                            height: 50px;
+                            width: 335px;
+                        }
+                        & p {
+                            margin-top: 48px;
+                            width: 335px;
+                            text-align: left;
+                        }
+                        & .btns {
+                            margin-top: 32px;
+                            width: 335px;
+                            grid-template-columns: auto;
+                            grid-template-rows: auto auto;
+
+                            & a {
+                                width: 335px;
+                                height: 47px;
+                                margin-bottom: 14px;
+                            }
+                            & a.bord {
+                                background-color: #ffffff;
+                                opacity: 90%;
+
+                                &:hover {
+                                    background-color: #1f1f1f;
+                                    color: #ffffff;
+                                    transition: 0.7s;
+                                    font-family: Golos Text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .wrapper-2 {
+            width: 375px;
+            height: 38px;
+
+            & p {
+                font-family: Merriweather;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 17.6px;
+                text-align: right;
+                color: #ffffff;
+            }
+        }
+        & .wrapper-3 {
+            width: 375px;
+        }
+        & .wrapper-4 {
+            width: 375px;
+        }
+        & .wrapper-5 {
+            width: 375px;
+        }
+        & .wrapper-6 {
+            width: 375px;
+        }
+        & .wrapper-8 {
+            width: 375px;
+        }
+    }
+}
