@@ -17,23 +17,24 @@ body {
 }
 .wrapper {
     transition: 0.7s;
-
-    width: 1366px;
+    justify-items: center;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: grid;
 
     & .wrapper-1 {
         display: grid;
-        width: 1366px;
+        width: 100%;
         height: 700px;
         background: #e9ded4;
 
         & .back_img {
             display: grid;
-            width: 1366px;
+            width: 100%;
             height: 700px;
             background: url(/img/Group_12t.png);
+            background-size: cover;
             gap: 0;
 
             & .sp_arr {
@@ -95,6 +96,10 @@ body {
                         place-items: center;
                         transition: 0.7s;
 
+                        & span {
+                            width: 165px;
+                        }
+
                         &:hover {
                             background-color: #fbce51;
                             color: #1f1f1f;
@@ -128,7 +133,7 @@ body {
     & .wrapper-2 {
         display: grid;
         height: 60px;
-        width: 1366px;
+        width: 100%;
         background-color: #f54932;
 
         & MARQUEE {
@@ -188,15 +193,11 @@ body {
                 object-fit: cover;
                 object-position: bottom;
                 transition: 0.6s;
-
-                &:hover {
-                    transition: 0.6s;
-                    opacity: 0.8;
-                    width: 110%;
-                    height: 110%;
-                }
             }
         }
+    }
+    & .wrapper-3_mobile {
+        display: none;
     }
     & .wrapper-4 {
         width: 1366px;
@@ -377,6 +378,9 @@ body {
             }
         }
     }
+    & .wrapper-5_mobile {
+        display: none;
+    }
     & .wrapper-6 {
         display: grid;
         width: 1366px;
@@ -384,7 +388,7 @@ body {
 
         & .news {
             display: grid;
-            padding: 200px 72px 72px 72px;
+            padding: 0px 72px 72px 72px;
 
             & h1 {
                 text-transform: capitalize;
@@ -401,7 +405,7 @@ body {
                 width: 1222px;
 
                 ul {
-                    float: left;
+                    float: center;
                     list-style-type: none;
 
                     & li {
@@ -454,7 +458,7 @@ body {
     }
     & .wrapper-8 {
         display: grid;
-        width: 1366px;
+        width: 100%;
         height: 150px;
         background-color: #e9ded4;
 
@@ -475,6 +479,9 @@ body {
 }
 [class^="bender-"] {
     display: grid;
+}
+[class^="group-"] {
+    width: 336px;
 }
 [class^="container-"] {
     display: grid;

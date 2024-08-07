@@ -27,7 +27,7 @@
 }
 
 .itc-slider-item {
-  flex: 0 0 35%;
+  flex: 0 0 34%;
   user-select: none;
   will-change: transform;
 }
@@ -117,4 +117,17 @@
 
 .itc-slider-indicator-active {
   background-color: rgb(255 255 255 / 90%);
+}
+@media (max-width: 376px){
+    .itc-slider-item {
+    flex: 0 0 100%;
+    user-select: none;
+    will-change: transform;
+  }
+  .itc-slider {
+    width: 336px;
+  }
+  .itc-slider-items {
+    margin-top: 148px;
+  }
 }

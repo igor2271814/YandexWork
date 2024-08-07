@@ -78,19 +78,302 @@
             }
         }
         & .wrapper-3 {
+            display: none;
+        }
+        & .wrapper-3_mobile {
+            display: grid;
             width: 375px;
+
+            & .group_support {
+                margin: 48px 20px 34px 19px;
+                width: 336px;
+                display: grid;
+                grid-template-columns: auto;
+                align-items: center;
+                vertical-align: text-top;
+                list-style-type: none;
+
+                & h1 {
+                    font-family: Merriweather;
+                    font-size: 28px;
+                    font-weight: 400;
+                    line-height: 37.8px;
+                    text-align: left;
+
+                    & span {
+                        font-family: Merriweather;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 37.8px;
+                        text-align: left;
+                    }
+                }
+                & img {
+                    width: 336px;
+                    object-fit: cover;
+                    transition: 0.6s;
+                }
+
+                & .group-1 {
+                    margin-bottom: 24px;
+                }
+                & .group-2 {
+                    margin-bottom: 24.44px;
+                }
+            }
         }
         & .wrapper-4 {
             width: 375px;
+            display: grid;
+            justify-items: center;
+
+            & .bender {
+                width: 375px;
+                display: grid;
+                justify-items: center;
+                grid-template-areas:
+                    "A"
+                    "B"
+                    "C"
+                    "D";
+
+                & .bender-1 {
+                    margin: 0;
+                    width: 336px;
+
+                    & img {
+                        width: 336px;
+                    }
+                }
+                & .bender-2 {
+                    margin: 0;
+                    width: 336px;
+
+                    & h1 {
+                        font-family: Merriweather;
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 37.8px;
+                        text-align: left;
+                    }
+                    & span {
+                        font-family: Merriweather;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 37.8px;
+                        text-align: left;
+                    }
+                }
+                & .bender-3 {
+                    margin: 0;
+                    width: 336px;
+
+                    & table {
+                        width: 336px;
+                        border-collapse: collapse;
+
+                        & tr {
+                            display: flex;
+                            flex-direction: column;
+                            height: auto; // Высота строк будет зависеть от содержания
+
+                            &:not(:last-child) {
+                                padding-bottom: 4px;
+                                border-bottom: 1px solid black; // Добавляем нижнюю границу для всех строк, кроме последней
+                            }
+                        }
+
+                        & th,
+                        td {
+                            display: block;
+                            width: 100%;
+                            box-sizing: border-box;
+                            border: none;
+                            padding: 12px;
+                        }
+                        th:last-child,
+                        td:last-child {
+                            padding-left: 0px;
+                            border: none;
+                        }
+                        & th:first-child,
+                        td:first-child {
+                            padding-left: 0px;
+                            border: none;
+                        }
+
+                        // Стили для текста
+                        & p {
+                            font-family: Golos Text;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            text-align: left;
+                            color: #313131;
+                            opacity: 70%;
+                        }
+
+                        & span {
+                            font-family: Golos Text;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            text-align: left;
+                            color: #313131;
+                        }
+
+                        & .dash {
+                            text-decoration: line-through;
+                            text-decoration-color: red;
+                            padding-right: 12px;
+                        }
+                    }
+                }
+                & .bender-4 {
+                    margin-top: 40px;
+                    width: 336px;
+
+                    & a {
+                        font-family: Golos Text;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 21.6px;
+                        text-align: left;
+                    }
+                }
+            }
         }
         & .wrapper-5 {
-            width: 375px;
+            display: none;
+        }
+        & .wrapper-5_mobile {
+            display: grid;
+            margin-top: 120px;
+            margin-bottom: 120px;
+            justify-items: center;
+            & .news {
+                width: 336px;
+                padding: 0px;
+
+                & p {
+                    font-family: Golos Text;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.6px;
+                    text-align: left;
+                    color: #3057a2;
+                }
+                & h1 {
+                    font-family: Merriweather;
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 39.6px;
+                    text-align: left;
+                    color: #313131;
+                    margin-bottom: 12px;
+                }
+                & ul {
+                    display: grid;
+                    align-items: center;
+                    width: 335px;
+                    height: 300px;
+                    background: url(/img/back_tab.png);
+                    & img {
+                        position: absolute;
+                        z-index: 99999;
+                        top: -170px;
+                    }
+                    & li {
+                        display: grid;
+                    }
+                    & p {
+                        margin-left: 20px;
+                        width: 291px;
+                        gap: 16px;
+                        display: inline-flex;
+                        font-family: Golos Text;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 21.6px;
+                        text-align: left;
+
+                        color: #313131;
+                    }
+                    & span {
+                        display: grid;
+                        align-items: center;
+                        background-color: #ffffff;
+                        text-align: right;
+                        border-radius: 50%;
+                        height: 36px;
+                        width: 36px;
+                        font-family: Golos Text;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 36px;
+                        text-align: center;
+                        color: #313131;
+                    }
+                }
+            }
         }
         & .wrapper-6 {
             width: 375px;
+            justify-items: center;
+            margin-bottom: 100px;
+
+            & .news {
+                width: 336px;
+                padding: 0px;
+
+                & h1 {
+                    margin-bottom: 40px;
+                    font-family: Merriweather;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 39.6px;
+                    text-align: left;
+                }
+
+                & .news_line {
+                    width: 336px;
+                }
+            }
         }
         & .wrapper-8 {
             width: 375px;
+            height: 100%;
+
+            & p {
+                padding: 60px 20px 60px 20px;
+                font-family: Golos Text;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                text-align: left;
+            }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    .wrapper {
+        width: 100%;
+        justify-items: center;
+
+        & .wrapper-1 {
+            width: 1920px;
+
+            & .back_img {
+                width: 1920px;
+                background-size: cover;
+            }
+        }
+        & .wrapper-2 {
+            width: 1920px;
+        }
+        & .wrapper-8 {
+            width: 1920px;
         }
     }
 }
