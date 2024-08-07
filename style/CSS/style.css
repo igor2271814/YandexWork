@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Merriweather";
-  src: url(/font/Merriweather/Merriweather-Regular.ttf);
+  src: url(font/Merriweather/Merriweather-Regular.ttf);
 }
 @font-face {
   font-family: "Golos Text";
-  src: url(/font/Golos_Text/Golos-Text_Regular.ttf);
+  src: url(font/Golos_Text/Golos-Text_Regular.ttf);
 }
 * {
   margin: 0;
@@ -35,7 +35,7 @@ body {
   display: grid;
   width: 100%;
   height: 700px;
-  background: url(/img/Group_12t.png);
+  background: url(img/Group_12t.png);
   background-size: cover;
   gap: 0;
 }
@@ -466,7 +466,7 @@ body {
   gap: 30px;
   grid-template-columns: 16px auto;
   color: #313131;
-  background: url(/img/back_tab.png);
+  background: url(img/back_tab.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
